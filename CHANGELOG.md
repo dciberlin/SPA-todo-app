@@ -2,18 +2,6 @@
 
 This changelog is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each change.
 
-## Stage 3: Props and State
-
-In this stage we try to play around with props and state
-
-    - We created seperate components for the todo and todones items.
-    - We passed props from our ToDosContainer and ToDonesContainers to each item.
-    - We updated our App component as a class component.
-    - We gathered all our fake data in the state of our App component and fed
-      them as props to each child.
-    - So now `App.js` sends an array of todo-items to `ToDosContainer` via props. And
-     `ToDosContainer` sends each item to the the `ToDoItem` component again via props.
-
 ## Stage 2: Components
 
 In this stage we set up our basic structure.
