@@ -1,11 +1,17 @@
 import React from 'react';
-import ToDoItem from './ToDoItem';
 
 const ToDosContainer = props => {
   const todos = props.items;
 
   const toDoItems = todos.map(el => {
-    return <ToDoItem item={el} key={el.text}></ToDoItem>;
+    return (
+      <div className="todo-item" key={el.text}>
+        <p>{el.text}</p>
+        <div className="actions">
+          <button className="btn">&#10004;</button>
+        </div>
+      </div>
+    );
   });
 
   return (

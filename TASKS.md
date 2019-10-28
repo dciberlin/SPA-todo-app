@@ -13,7 +13,7 @@ State on the other hand, stores data about the component that can change over ti
 **TODO**
 
 1. Please create a separate component for each todo and todone item.
-2. Please use props to pass the data of each item from the parent component to the child.
+2. Please use props pass the data of each item from the parent component to the child.
 3. Use state to define the initial state of your app component.
 
 ## Task 02 - Components
