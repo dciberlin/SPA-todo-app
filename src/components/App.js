@@ -30,6 +30,7 @@ class App extends React.Component {
         return item;
       } else return item;
     });
+
     localStorage.setItem('spa-todo-app', JSON.stringify(items));
     this.setState({ items });
   };
@@ -49,7 +50,6 @@ class App extends React.Component {
       <Router>
         <div className="app">
           <Navigation></Navigation>
-
           <Switch>
             <Route exact path="/">
               <ToDosContainer
