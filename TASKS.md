@@ -2,6 +2,15 @@
 
 This file lists the changes that need to be made in each stage. It is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each task added.
 
+## Task 06 - Routing
+
+In most of the apps out there build with any frontend framework, whenever you visit a navigation item, the url let you know where you are exactly. Routing is a big thing and tha way to do it in react is with the help of [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+
+**TODOS**
+
+1. Please install react-router-dom.
+2. Create a help component re-arrange your app so you can visit your homepage and the help page. Within homepage you will find your todo app and within help a set of instructions on how to use the app.
+
 ## Task 05 - Lifecycle Methods
 
 You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death. Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
