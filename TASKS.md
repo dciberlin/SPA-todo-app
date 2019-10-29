@@ -33,9 +33,9 @@ You can think of React lifecycle methods as the series of events that happen fro
 Now that we understand the series of lifecycle events let’s learn more about how they work.
 
 **TODOS**
-Instead of having predefined data in our app we will create a small server that stores our todos. That way we will be able to use the right lifecycle methods to retrieve the data when we mount our components. The code for the server is available in the branch `stage/05-lifecycle`. All you need to do is enter the server directory and run `node server.js`.
+Since there is no server around to store data, we will use localStorage instead. That way we will be able to use the right lifecycle methods to retrieve the data when we mount our components.
 
-1. Connect your app with your api so it can retrieve all todos and create new ones.
+1. Connect your app with your localStorage so it can retrieve all todos and create new ones.
 
 ## Task 04 - Events and Forms
 
