@@ -2,6 +2,8 @@ import React from 'react';
 import ToDoItem from './ToDoItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { connect } from 'react-redux';
+import { addTodo } from '../actions';
 
 class ToDosContainer extends React.Component {
   constructor(props) {
@@ -18,23 +20,14 @@ class ToDosContainer extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.handleAddTodo(this.state.value);
-    this.setState({
-      value: ''
-    });
+    this.props.addTodo(this.state.value);
   }
 
   render() {
-    const todos = this.props.items;
+    const todos = this.props.todos;
 
     const toDoItems = todos.map(el => {
-      return (
-        <ToDoItem
-          item={el}
-          key={el.id}
-          onStatusChange={this.props.handleChange}
-        ></ToDoItem>
-      );
+      return <ToDoItem item={el} key={el.id}></ToDoItem>;
     });
 
     return (
@@ -54,7 +47,7 @@ class ToDosContainer extends React.Component {
           <div className="todos">
             <div className="title">
               <h3>TO DO</h3>
-              {todos.length == 0 && <FontAwesomeIcon icon={faSpinner} spin />}
+              {todos.length === 0 && <FontAwesomeIcon icon={faSpinner} spin />}
             </div>
             {todos.length > 0 && toDoItems}
           </div>
@@ -64,4 +57,11 @@ class ToDosContainer extends React.Component {
   }
 }
 
-export default ToDosContainer;
+const mapStateToProps = state => ({
+  todos: state.todos.filter(item => !item.done)
+});
+
+export default connect(
+  mapStateToProps,
+  { addTodo }
+)(ToDosContainer);

@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { updateTodo } from '../actions';
 
 class ToDoneItem extends React.Component {
   render() {
@@ -10,7 +12,7 @@ class ToDoneItem extends React.Component {
         <div className="actions">
           <button
             className="btn"
-            onClick={() => this.props.onStatusChange(item.id)}
+            onClick={() => this.props.updateTodo(item.id)}
           >
             &#8635;
           </button>
@@ -20,4 +22,11 @@ class ToDoneItem extends React.Component {
   }
 }
 
-export default ToDoneItem;
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(
+  mapStateToProps,
+  { updateTodo }
+)(ToDoneItem);
