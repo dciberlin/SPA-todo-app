@@ -4,7 +4,7 @@ This file lists the changes that need to be made in each stage. It is ordered in
 
 ## Task 07 - Deployment
 
-The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. On the other hand we also need a place to deploy our server. Unfortunately gh-pages doesn't support the deployment of our server. So what we are going to do now is that instead of using a server to store our data, we will use localStorage. Hurray!
+The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. Since gh-pages doesn't support the deployment of a server, the fact that we need localStorage to store our data paid out.
 
 **TODOS**
 
@@ -33,9 +33,10 @@ You can think of React lifecycle methods as the series of events that happen fro
 Now that we understand the series of lifecycle events let’s learn more about how they work.
 
 **TODOS**
-Instead of having predefined data in our app we will create a small server that stores our todos. That way we will be able to use the right lifecycle methods to retrieve the data when we mount our components. The code for the server is available in the branch `stage/05-lifecycle`. All you need to do is enter the server directory and run `node server.js`.
 
-1. Connect your app with your api so it can retrieve all todos and create new ones.
+Since there is no server around to store data, we will use localStorage instead. That way we will be able to use the right lifecycle methods to retrieve the data when we mount our components.
+
+1. Connect your app with your localStorage so it can retrieve all todos and create new ones.
 
 ## Task 04 - Events and Forms
 
