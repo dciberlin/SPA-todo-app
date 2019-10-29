@@ -18,12 +18,16 @@ class ToDonesContainer extends React.Component {
     });
 
     return (
-      <div className="todones-container">
-        <div className="title">
-          <h3>BACKLOG</h3>
-          {todones.length == 0 && <FontAwesomeIcon icon={faSpinner} spin />}
-        </div>{' '}
-        {todones.length > 0 && toDoNesItems}
+      <div>
+        {todones.length !== 0 && (
+          <div className="todones-container">
+            <div className="title">
+              <h3>BACKLOG</h3>
+              {todones.length == 0 && <FontAwesomeIcon icon={faSpinner} spin />}
+            </div>{' '}
+            {todones.length > 0 && toDoNesItems}
+          </div>
+        )}
       </div>
     );
   }
