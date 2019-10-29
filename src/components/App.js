@@ -3,7 +3,10 @@ import '../css/App.scss';
 import Navigation from './Navigation';
 import ToDosContainer from './ToDosContainer';
 import ToDonesContainer from './ToDonesContainer';
+import Help from '../views/Help';
+import NotFound from '../views/NotFound';
 import axios from 'axios';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -62,18 +65,29 @@ class App extends React.Component {
     const toDones = this.state.items.filter(el => el.done);
 
     return (
-      <div className="app">
-        <Navigation></Navigation>
-        <ToDosContainer
-          items={toDos}
-          handleChange={this.updateItem}
-          handleAddTodo={this.addItem}
-        ></ToDosContainer>
-        <ToDonesContainer
-          items={toDones}
-          handleChange={this.updateItem}
-        ></ToDonesContainer>
-      </div>
+      <Router>
+        <div className="app">
+          <Navigation></Navigation>
+
+          <Switch>
+            <Route exact path="/">
+              <ToDosContainer
+                items={toDos}
+                handleChange={this.updateItem}
+                handleAddTodo={this.addItem}
+              ></ToDosContainer>
+              <ToDonesContainer
+                items={toDones}
+                handleChange={this.updateItem}
+              ></ToDonesContainer>
+            </Route>
+            <Route exact path="/help">
+              <Help />
+            </Route>
+            <Route component={NotFound} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
