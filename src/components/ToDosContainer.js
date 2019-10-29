@@ -26,6 +26,7 @@ class ToDosContainer extends React.Component {
 
   render() {
     const todos = this.props.items;
+
     const toDoItems = todos.map(el => {
       return (
         <ToDoItem
@@ -49,13 +50,15 @@ class ToDosContainer extends React.Component {
           </label>
           <input className="btn" type="submit" value="ADD" />
         </form>
-        <div className="todos">
-          <div className="title">
-            <h3>TO DO</h3>
-            {todos.length == 0 && <FontAwesomeIcon icon={faSpinner} spin />}
+        {todos.length !== 0 && (
+          <div className="todos">
+            <div className="title">
+              <h3>TO DO</h3>
+              {todos.length == 0 && <FontAwesomeIcon icon={faSpinner} spin />}
+            </div>
+            {todos.length > 0 && toDoItems}
           </div>
-          {todos.length > 0 && toDoItems}
-        </div>
+        )}
       </div>
     );
   }
