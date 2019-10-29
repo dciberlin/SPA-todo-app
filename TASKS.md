@@ -4,7 +4,7 @@ This file lists the changes that need to be made in each stage. It is ordered in
 
 ## Task 07 - Deployment
 
-The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. On the other hand we also need a place to deploy our server. Unfortunately gh-pages doesn't support the deployment of our server. So what we are going to do now is that instead of using a server to store our data, we will use localStorage. Hurray!
+The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. Since gh-pages doesn't support the deployment of a server, the fact that we need localStorage to store our data paid out.
 
 **TODOS**
 
