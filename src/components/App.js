@@ -6,8 +6,6 @@ import ToDonesContainer from './ToDonesContainer';
 import Help from '../views/Help';
 import NotFound from '../views/NotFound';
 import { Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
@@ -27,8 +25,4 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return state;
-};
-
-export default withRouter(connect(mapStateToProps)(App));
+export default App;
