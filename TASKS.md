@@ -2,6 +2,17 @@
 
 This file lists the changes that need to be made in each stage. It is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each task added.
 
+## Task 07 - Deployment
+
+The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. On the other hand we also need a place to deploy our server. Unfortunately gh-pages doesn't support the deployment of our server. So what we are going to do now is that instead of using a server to store our data, we will use localStorage. Hurray!
+
+**TODOS**
+
+1. Set up gh-pages so you can deploy the app.
+2. Make sure react-router works as it should.
+3. Update the app to use local storage instead of the server.
+4. Deploy your app!
+
 ## Task 06 - Routing
 
 In most of the apps out there build with any frontend framework, whenever you visit a navigation item, the url let you know where you are exactly. Routing is a big thing and tha way to do it in react is with the help of [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
