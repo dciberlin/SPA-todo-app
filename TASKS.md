@@ -2,6 +2,16 @@
 
 This file lists the changes that need to be made in each stage. It is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each task added.
 
+## Task 08 - Redux
+
+Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. React Redux is the official React binding for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update data.
+
+Dan Abramov, one of the minds behind React has a great [tutorial](https://egghead.io/courses/getting-started-with-redux) on what is redux exactly and how to use it properly.
+
+**TODOS**
+
+Well, we have to integrate redux into our app.
+
 ## Task 07 - Deployment
 
 The time has come to deploy our application somewhere. That's easy and we will follow spesific steps to deploy our app. Since gh-pages doesn't support the deployment of a server, the fact that we need localStorage to store our data paid out.
