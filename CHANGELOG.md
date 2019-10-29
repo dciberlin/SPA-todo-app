@@ -2,6 +2,18 @@
 
 This changelog is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each change.
 
+## Stage 6: Deployment
+
+In this branch we prepared our page for deployment.
+
+- We installed gh-pages.
+- We edited our package.json with some extra fields (two scripts and a homepage link).
+- We updated our router so it can work with gh-pages.
+
+**Links**
+
+[Deployment tutorial](https://github.com/gitname/react-gh-pages)
+
 ## Stage 6: React router
 
 In this stage we introduced react-router to our app
