@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07026b4dbde7f72891f81dc3b352e957",
+    "revision": "0f4b42d20a0a5393ef42dd9eb5938343",
     "url": "/SPA-todo-app/index.html"
   },
   {
-    "revision": "02a33b797a7b66fe0656",
+    "revision": "765b0197af0537632fc2",
     "url": "/SPA-todo-app/static/css/main.fcb06fc8.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SPA-todo-app/static/js/2.107bf40b.chunk.js"
   },
   {
-    "revision": "02a33b797a7b66fe0656",
-    "url": "/SPA-todo-app/static/js/main.9789d6ab.chunk.js"
+    "revision": "765b0197af0537632fc2",
+    "url": "/SPA-todo-app/static/js/main.fb99d348.chunk.js"
   },
   {
     "revision": "9e889fc373b88b272d9b",

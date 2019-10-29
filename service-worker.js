@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SPA-todo-app/precache-manifest.babce0a810955e1048d8a1c76cdebd8a.js"
+  "/SPA-todo-app/precache-manifest.512c43a26c10839257fd16fe3d51ad3d.js"
 );
 
 self.addEventListener('message', (event) => {
