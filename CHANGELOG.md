@@ -13,11 +13,9 @@ In this stage we introduced react-router to our app
 
 ## Stage 5: Lifecycle Methods
 
-In this stage we introduced a server where we store all our data, and using react's lifecycle methods we made our app dynamic
+In this stage we introduced localStorage where we store all our data, and using react's lifecycle methods we made our app dynamic
 
-    - We added the server directory, installed its dependencies and run it.
-    - Installed axios and got the initial data using ComponentDidMount.
-    - Updated our functions to store data in the server.
+    - Updated our functions to store and manipulate data in the localstorage.
     - Installed font awesome for react and created a loader for smoother UI.
 
 **Links**

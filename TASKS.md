@@ -22,6 +22,7 @@ You can think of React lifecycle methods as the series of events that happen fro
 Now that we understand the series of lifecycle events let’s learn more about how they work.
 
 **TODOS**
+
 Since there is no server around to store data, we will use localStorage instead. That way we will be able to use the right lifecycle methods to retrieve the data when we mount our components.
 
 1. Connect your app with your localStorage so it can retrieve all todos and create new ones.
