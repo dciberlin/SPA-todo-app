@@ -2,6 +2,15 @@
 
 This changelog is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each change.
 
+## Stage 6: React router
+
+In this stage we introduced react-router to our app
+
+    - First we install the dependecy react-router-dom
+    - Then we updated our links in our navigation.
+    - Afterwards we chose what components to render and when using `switch`.
+    - We created a help component and a 404 component and we stored them inside the new `views` directory.
+
 ## Stage 5: Lifecycle Methods
 
 In this stage we introduced a server where we store all our data, and using react's lifecycle methods we made our app dynamic
