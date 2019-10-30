@@ -2,6 +2,22 @@
 
 This changelog is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each change.
 
+## Stage 9: Thunk
+
+I know i know i know. Redux is a nerve breaker. And thunk is the cherry on the nerve breaker. But once you understand and practice the communication between the store, the reducers and the actions it will become a routine.
+
+Look at you! You made a modern single page application using localStorage and fetching data from an api.
+
+Respect! :nail_care:
+
+Here is the last changes we made
+
+    - We installed thunk and axios.
+    - We restrctured our components in order to flexbox them properly.
+    - We made new component for the news.
+    - We made new reducers and used thunk as a middleware to setup our aync functions.
+    - We requested the data, got them and displayed them properly CSSd.
+
 ## Stage 8: Redux
 
 Redux arrived and brought a bunch of changes
