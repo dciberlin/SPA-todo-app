@@ -6,7 +6,7 @@ class NewsItem extends React.Component {
 
     return (
       <div className="news-item">
-        <a href={item.url} target="_blank">
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
           <div className="img-container">
             <img src={item.urlToImage} alt="img"></img>
           </div>
