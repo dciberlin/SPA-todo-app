@@ -39,31 +39,53 @@ $btnBg: #184b43;
       color: white;
     }
   }
-  .todos-container {
-    padding: 20px 10px;
-    width: 400px;
-    .todo-form {
-      .input-item {
-        input {
-          padding: 10px;
-          border-radius: 20px;
-          border: none;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    .todos-container {
+      padding: 20px 10px;
+      width: 400px;
+      .todo-form {
+        .input-item {
+          input {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background: $inputBg;
+            margin-right: 10px;
+            color: white;
+            font-size: 1.2em;
+            min-width: 300px;
+          }
+        }
+      }
+      .todos {
+        padding-top: 30px;
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .todo-item {
+          padding: 5px 10px;
           background: $inputBg;
-          margin-right: 10px;
-          color: white;
-          font-size: 1.2em;
-          min-width: 300px;
+          margin: 10px 0;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
         }
       }
     }
-    .todos {
-      padding-top: 30px;
+    .todones-container {
+      padding: 10px;
+      width: 400px;
       .title {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-      .todo-item {
+      .todones-item {
         padding: 5px 10px;
         background: $inputBg;
         margin: 10px 0;
@@ -71,29 +93,16 @@ $btnBg: #184b43;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        p {
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
       }
     }
-  }
-  .todones-container {
-    padding: 10px;
-    width: 400px;
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .todones-item {
-      padding: 5px 10px;
-      background: $inputBg;
-      margin: 10px 0;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      p {
-        text-decoration: line-through;
-        opacity: 0.5;
-      }
+    .news-container {
+      height: 200px;
+      width: 400px;
+      background: red;
     }
   }
   .help {
