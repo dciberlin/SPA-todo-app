@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchNews } from '../actions';
+import NewsItem from './NewsItem';
 
 class News extends React.Component {
   componentDidMount() {
@@ -8,8 +9,16 @@ class News extends React.Component {
   }
 
   render() {
-    console.log(this.props.news);
-    return <div className="news-container"></div>;
+    const newsItems = this.props.news.map(el => {
+      return <NewsItem item={el} key={el.url}></NewsItem>;
+    });
+
+    return (
+      <div className="news-container">
+        <h5>BBC News</h5>
+        {newsItems}
+      </div>
+    );
   }
 }
 
