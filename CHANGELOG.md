@@ -2,6 +2,21 @@
 
 This changelog is ordered in reverse chronological order, meaning that the last changes made will always be on top of the file, so that readers will not have to scroll all the way down with each change.
 
+## Stage 8: Redux
+
+Redux arrived and brought a bunch of changes
+
+    - We wrapped our app in redux.
+    - We created the basic structure of redux with a store, reducers and actions.
+    - We moved our data lgoic in our reducers and removed all the props we didn't need
+    - Connected our components to the store.
+    - Made sure our react-router still works as it should.
+
+**Links**
+
+- [React-redux](https://react-redux.js.org/)
+- [React-redux with react-router](https://reacttraining.com/react-router/web/guides/redux-integration)
+
 ## Stage 7: Deployment
 
 In this branch we prepared our page for deployment.
