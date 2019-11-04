@@ -14,7 +14,7 @@ class App extends React.Component {
       <div className="app">
         <Navigation></Navigation>
         <Switch>
-          <Route>
+          <Route exact path="/">
             <div className="container">
               <div className="left">
                 <ToDosContainer></ToDosContainer>
