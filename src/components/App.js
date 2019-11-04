@@ -13,7 +13,7 @@ class App extends React.Component {
       <div className="app">
         <Navigation></Navigation>
         <Switch>
-          <Route>
+          <Route exact path="/">
             <ToDosContainer></ToDosContainer>
             <ToDonesContainer></ToDonesContainer>
           </Route>
