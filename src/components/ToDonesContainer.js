@@ -1,7 +1,5 @@
 import React from 'react';
 import ToDoneItem from './ToDoneItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 class ToDonesContainer extends React.Component {
   render() {
