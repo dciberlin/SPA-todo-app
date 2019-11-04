@@ -62,11 +62,7 @@ $btnBg: #184b43;
       }
       .todos {
         padding-top: 30px;
-        .title {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
+
         .todo-item {
           padding: 5px 10px;
           background: $inputBg;
@@ -81,11 +77,7 @@ $btnBg: #184b43;
     .todones-container {
       padding: 10px;
       width: 400px;
-      .title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+
       .todones-item {
         padding: 5px 10px;
         background: $inputBg;
@@ -104,7 +96,15 @@ $btnBg: #184b43;
       width: 400px;
       max-height: 500px;
       overflow: scroll;
-      padding: 10px;
+      padding: 20px;
+      background: $navBg;
+      border-radius: 10px;
+      margin: 10px;
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
       a {
         color: white;
         text-decoration: none;

@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchNews } from '../actions';
 import NewsItem from './NewsItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 class News extends React.Component {
   componentDidMount() {
@@ -15,7 +17,12 @@ class News extends React.Component {
 
     return (
       <div className="news-container">
-        <h5>BBC News</h5>
+        <div className="title">
+          <h5>BBC News</h5>
+          {this.props.news.length === 0 && (
+            <FontAwesomeIcon icon={faSpinner} spin />
+          )}
+        </div>
         {newsItems}
       </div>
     );
