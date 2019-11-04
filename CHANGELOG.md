@@ -59,7 +59,6 @@ In this stage we introduced react-router to our app
 In this stage we introduced localStorage where we store all our data, and using react's lifecycle methods we made our app dynamic
 
     - Updated our functions to store and manipulate data in the localstorage.
-    - Installed font awesome for react and created a loader for smoother UI.
 
 **Links**
 
