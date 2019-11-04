@@ -57,7 +57,13 @@ $btnBg: #184b43;
             color: white;
             font-size: 1.2em;
             min-width: 300px;
+            margin-bottom: 5px;
           }
+        }
+        .warning-container {
+          color: red;
+          margin-left: 10px;
+          min-height: 15px;
         }
       }
       .todos {

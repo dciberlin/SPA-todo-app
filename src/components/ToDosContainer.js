@@ -8,29 +8,33 @@ import { addTodo } from '../actions';
 class ToDosContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { value: '', showWarning: false };
 
     this.handleNewTodoChange = this.handleNewTodoChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleNewTodoChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value, showWarning: false });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.value.length >= 1) {
+    if (this.state.value.length >= 3) {
       this.props.addTodo(this.state.value);
       this.setState({
-        value: ''
+        value: '',
+        showWarning: false
+      });
+    } else {
+      this.setState({
+        showWarning: true
       });
     }
   }
 
   render() {
     const todos = this.props.todos;
-
     const toDoItems = todos.map(el => {
       return <ToDoItem item={el} key={el.id}></ToDoItem>;
     });
@@ -47,6 +51,11 @@ class ToDosContainer extends React.Component {
             />
           </label>
           <input className="btn" type="submit" value="ADD" />
+          <div className="warning-container">
+            {this.state.showWarning && (
+              <small>Your todo should be at least 3 characters long</small>
+            )}
+          </div>
         </form>
         {todos.length !== 0 && (
           <div className="todos">
