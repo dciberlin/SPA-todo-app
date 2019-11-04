@@ -7,7 +7,6 @@ This changelog is ordered in reverse chronological order, meaning that the last 
 In this stage we introduced localStorage where we store all our data, and using react's lifecycle methods we made our app dynamic
 
     - Updated our functions to store and manipulate data in the localstorage.
-    - Installed font awesome for react and created a loader for smoother UI.
 
 **Links**
 
