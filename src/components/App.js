@@ -5,7 +5,7 @@ import ToDosContainer from './ToDosContainer';
 import ToDonesContainer from './ToDonesContainer';
 import Help from '../views/Help';
 import NotFound from '../views/NotFound';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class App extends React.Component {
         <div className="app">
           <Navigation></Navigation>
           <Switch>
-            <Route exact>
+            <Route exact path="/">
               <ToDosContainer
                 items={toDos}
                 handleChange={this.updateItem}
