@@ -57,6 +57,7 @@ class ToDosContainer extends React.Component {
             {todos.length > 0 && toDoItems}
           </div>
         )}
+      </div>
     );
   }
 }
