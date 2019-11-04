@@ -21,8 +21,6 @@ class App extends React.Component {
   }
 
   updateItem = id => {
-    const item = this.state.items.filter(el => el.id === id)[0];
-
     //We need to toggle the status of the item with `id`.
     const items = this.state.items.map(item => {
       if (item.id === id) {
